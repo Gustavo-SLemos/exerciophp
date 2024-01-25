@@ -1,4 +1,4 @@
-<?php
+ <?php
 class Disciplina {
     public string $nome;
     public int $cargaHoraria;
