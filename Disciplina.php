@@ -1,9 +1,9 @@
 <?php
 class Disciplina {
-    public $nome;
-    public $cargaHoraria;
+    public string $nome;
+    public int $cargaHoraria;
     public $professor;
-    public $alunos;
+    public array $alunos;
 
     public function __construct($nome, $cargaHoraria, $professor, $alunos) {
         $this->nome = $nome;
@@ -17,10 +17,3 @@ class Disciplina {
     }
 }
 
-$listaAlunosQuimica = array("Alice", "Bob", "Charlie");//trocar pelos objetos alunos
-
-$quimica = new Disciplina("Química", 60, "Professor Silva", $listaAlunosQuimica);
-
-echo"\n\n";
-echo $quimica->getInfo();
-echo"\n\n";
